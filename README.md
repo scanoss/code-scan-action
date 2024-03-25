@@ -43,7 +43,7 @@ jobs:
 
       - name: Run SCANOSS Code Scan
         id: scanoss-code-scan-step
-        uses: scanoss/code-scan-action@main
+        uses: scanoss/code-scan-action@v0
 ```
 
 For example workflow runs, check out our
@@ -117,7 +117,7 @@ jobs:
 
       - name: Run SCANOSS Code Scan
         id: scanoss-code-scan-step
-        uses: scanoss/code-scan-action@main
+        uses: scanoss/code-scan-action@v0
         with:
           policies: copyleft, undeclared  #NOTE: undeclared policy requires a sbom.json in the project root
           dependencies.enabled: true
